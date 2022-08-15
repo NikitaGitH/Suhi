@@ -34,7 +34,6 @@ header{
     padding-right: 60px;
     box-sizing: border-box;
     position: relative;
-    
 }
 .right__side__header{
     display: flex;
@@ -458,15 +457,8 @@ header{
     text-decoration: none;
 }
 @media(max-width:850px) {
-
-    .header__left__side{
-        display: none;
-    }
     header{
         height: auto;
-    }
-    .header__right__side{
-        width: 100%;
     }
     .header__right__side::before{
         display: none;
@@ -507,5 +499,74 @@ header{
     }
     .statistica__title{
         font-size: 20vw;
+    }
+}
+.smart__object{
+    width: 30px;
+    height: 35px;
+    background-image: url(./images/fruit1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 700px;
+    right: 150px;
+}
+.smart__object2{
+    width: 80px;
+    height: 115px;
+    background-image: url(./images/fruit4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 500px;
+    right: 50px;
+}
+.smart__object3{
+    width: 130px;
+    height: 115px;
+    background-image: url(./images/fruit3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 135px;
+    right: 250px;  
+}
+.smart__object4{
+    width: 125px;
+    height: 115px;
+    background-image: url(./images/fruit5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 600px;
+    right: 610px;
+}
+.smart__object5{
+    width: 95px;
+    height: 140px;
+    background-image: url(./images/fruit6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 85px;
+    right: 1000px; 
+}
+@media(max-width: 950px) {
+    .header__left__side{
+        display: none;
+    }
+    .header__right__side{
+        width: 100%;
+    }
+}
+@media(max-width: 1400px){
+    .smart__object{
+        display: none;
+    }
+}
+@media(max-width: 450px){
+    .right__side__header{
+        flex-direction: column;
+        align-items: center;
     }
 }
